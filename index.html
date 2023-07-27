@@ -12,10 +12,10 @@
     <main>
         <input type="search" class="light-table-filter" data-table="order-table" placeholder="Search..." />
         <div id="options">
-            <button class="options-button" onclick="about()" role="button">about</button>
-            <button class="options-button" onclick="howToUse()" role="button">how to use</button>
-            <button class="options-button" onclick="report()" role="button">report</button>
-            <button class="options-button" onclick="giffies()" role="button">GIF advertisement</button>
+            <button class="options-button" onclick="toggleModal('aboutModal')" role="button">about</button>
+            <button class="options-button" onclick="toggleModal('reportModal')" role="button">how to use</button>
+            <button class="options-button" onclick="toggleModal('howtouseModal')" role="button">report</button>
+            <button class="options-button" onclick="toggleModal('gifModal')" role="button">GIF advertisement</button>
         </div>
         <div id="data_table">
             <table class="order-table jpopsuki">

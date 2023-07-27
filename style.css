@@ -15,7 +15,7 @@ body{
 input{
   background-color: #212121;
   font-size: 0.8vw;
-  padding: 10px;
+  padding: 0.5208333333333334vw;
   color: #fafafa;
   transition: color 0.3s, background-color 0.3s;
   position: fixed;
@@ -35,7 +35,7 @@ input::placeholder{
   display: flex;
   overflow-x: scroll;
   transform: rotateX(180deg);
-  margin-top:45px;
+  margin-top: 2.34375vw;
 }
 #data_table .order-table{
   width: max-content;
@@ -51,6 +51,7 @@ input::placeholder{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-size: 1vw;
 }
 #data_table .order-table tbody{
   display: flex;
@@ -66,6 +67,7 @@ tr.highlighted {
   padding: 0.5vw;
   font-weight: 600;
   white-space: nowrap;
+  font-size: 1vw;
 }
 #data_table .order-table thead tr th{
   font-weight: 800;
@@ -105,8 +107,8 @@ tr.highlighted {
 }
 .options-button {
   background-color: #01579b;
-  border: 1px solid transparent;
-  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  border: 0.052083333333333336vw solid transparent;
+  box-shadow: rgba(255, 255, 255, .4) 0 0.052083333333333336vw 0 0 inset;
   box-sizing: border-box;
   color: #fafafa;
   cursor: pointer;
@@ -115,7 +117,7 @@ tr.highlighted {
   font-weight: 400;
   margin: 0;
   outline: none;
-  padding: 11px .8em;
+  padding: 1.1815252416756177vh 0.619vw;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -169,18 +171,19 @@ tr.highlighted {
     top: 0;
   left: 41%;
   width: 58%;
-  padding: 10px;
-  height: 25px;
+  padding: 0.5208333333333334vw;
+  height: 2.6852846401718584vh;
   background-color: #212121;
   display: flex;
   font-size: 0.7vw;
 }
 #status p{
   margin: 0;
-  font-weight: 500;}
+  font-weight: 500;
+}
 #yes_viable{
   color: #76ff03;
-  padding-left: 20px;
+  padding-left: 1.0416666666666667vw;
 }
 #not_viable{
   color: #ff1744;

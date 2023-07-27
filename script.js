@@ -46,7 +46,7 @@ tables.forEach((table) => {
       tbodyRows[i].classList.toggle('highlighted', event.type === 'mouseenter');
     }
   }
-  /* If you are reading this you owe me 20 billion pretzels, now get out! */
+  /* If you are reading this you owe me 20 billion cordon bleu from lidel, now get out! */
   document.addEventListener('DOMContentLoaded', function() {
     var theads = document.getElementsByTagName('thead');
     for (var i = 0; i < theads.length; i++) {

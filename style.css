@@ -79,6 +79,14 @@ tr.highlighted {
   background-color: rgba(224,224,224,0.8);
   color: #212121;
 }
+#data_table .order-table tbody tr.odd {
+  background-color: rgba(250,250,250,0.8)!important;
+  color: #212121!important;
+}
+#data_table .order-table tbody tr.even {
+  background-color: rgba(224,224,224,0.8)!important;
+  color: #212121!important;
+}
 .hidden{
   height: 0!important;
   overflow: hidden;
@@ -186,4 +194,12 @@ tr.highlighted {
   padding: 20px;
   border-radius: 5px;
   text-align: center;
+}
+.exemption{
+  display: flex!important;
+}
+#data_table .order-table tbody tr:hover{
+  transition: 0.3s;
+  background-color: #b3e5fc !important;
+  color: #212121!important;
 }

@@ -34,6 +34,7 @@ input::placeholder{
 #data_table{
   display: flex;
   overflow-x: scroll;
+  overflow-y: hidden;
   transform: rotateX(180deg);
   margin-top: 2.34375vw;
 }
@@ -42,6 +43,7 @@ input::placeholder{
   display: flex;
   flex-direction: column;
   transform: rotateX(180deg);
+  margin: -0.026041666666666668vw;
 }
 #data_table .order-table thead{
   background-color: #01579b;
@@ -52,6 +54,7 @@ input::placeholder{
   flex-direction: column;
   align-items: center;
   font-size: 1vw;
+  position: relative;
 }
 #data_table .order-table tbody{
   display: flex;
@@ -205,4 +208,78 @@ tr.highlighted {
   transition: 0.3s;
   background-color: #b3e5fc !important;
   color: #212121!important;
+}
+.switch {
+  position: absolute;
+  top: 0;
+  left:0 ;
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 5px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+#tracker_list{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex-direction: row;
+}
+#tracker_list li{
+  color: #76ff03;
+}
+#tracker_list li a{
+  color: #76ff03;
+  padding: 0 0.3vw;
+  text-decoration: none;
 }

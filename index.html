@@ -13,12 +13,12 @@
         <input type="search" class="light-table-filter" data-table="order-table" placeholder="Search..." />
         <div id="options">
             <button class="options-button" onclick="toggleModal('aboutModal')" role="button">about</button>
-            <button class="options-button" onclick="toggleModal('reportModal')" role="button">how to use</button>
-            <button class="options-button" onclick="toggleModal('howtouseModal')" role="button">report</button>
+            <button class="options-button" onclick="toggleModal('howtouseModal')" role="button">how to use</button>
+            <button class="options-button" onclick="toggleModal('reportModal')" role="button">report</button>
             <button class="options-button" onclick="toggleModal('gifModal')" role="button">GIF advertisement</button>
         </div>
         <div id="data_table">
-            <table class="order-table jpopsuki">
+            <table class="order-table jpopsuki normal">
                 <thead>
                     <tr><th>Jpopsuki</th></tr>
                     <tr class="description"><th>No weird stuff. What you see below is allowed.</th></tr>
@@ -263,7 +263,7 @@
                     </tr>
                 </tbody>
             </table>
-            <table class="order-table ianon">
+            <table class="order-table ianon normal">
                 <thead>
                     <tr><th>iAnon</th></tr>
                     <tr class="description"><th>No weird stuff. What you see below is allowed.</th></tr>
@@ -404,7 +404,7 @@
                     </tr>
                 </tbody>
             </table>
-            <table class="order-table oldtoonsworld">
+            <table class="order-table oldtoonsworld normal">
                 <thead>
                     <tr><th>Old Toons World</th></tr>
                     <tr class="description"><th>W: means windows. L: means linux. M: means MAC. What you see below is allowed.</th></tr>
@@ -521,7 +521,7 @@
                     </tr>
                 </tbody>
             </table>
-            <table class="order-table orpheus">
+            <table class="order-table orpheus normal">
                 <thead>
                     <tr><th>Orpheus</th></tr>
                     <tr class="description"><th>No weird stuff. What you see below is allowed.</th></tr>
@@ -634,7 +634,7 @@
                     </tr>
                 </tbody>
             </table>
-            <table class="order-table redacted">
+            <table class="order-table redacted normal">
                 <thead>
                     <tr><th>Redacted</th></tr>
                     <tr class="description"><th>No weird stuff. What you see below is allowed.</th></tr>
@@ -751,7 +751,7 @@
                     </tr>
                 </tbody>
             </table>
-            <table class="order-table sportscult">
+            <table class="order-table sportscult normal">
                 <thead>
                     <tr><th>Sportscult</th></tr>
                     <tr class="description"><th>Only latest versions of what is below is allowed. If it doesnt work then you need to downgrade and wait on staff for approval.</th></tr>
@@ -798,7 +798,7 @@
                     </tr>
                 </tbody>
             </table>
-            <table class="order-table myanonmouse">
+            <table class="order-table myanonmouse normal">
                 <thead>
                     <tr><th>MyAnonMouse</th></tr>
                     <tr class="description"><th>What you see below is allowed. People say that they can use utorrent yet it is not mentioned on their site?</th></tr>
@@ -873,31 +873,15 @@
                     </tr>
                 </tbody>
             </table>
-            <table class="order-table secretcinema exemption">
-                <thead>
-                    <tr><th>Secret Cinema</th></tr>
-                    <tr class="description"><th>No blacklist or whitelist.</th></tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Everything is allowed.</td>
-                    </tr>
-                </tbody>
-            </table>
             <table class="order-table crt exemption">
                 <thead>
-                    <tr><th>Cathode-Ray.Tube</th></tr>
-                    <tr class="description"><th>No blacklist or whitelist.</th></tr>
-                </thead>
-                <tbody>
                     <tr>
-                        <td>Everything is allowed.</td>
+                        <th style="display:none">[ CRT | TVCUK | SC ]</th>
+                        <th>Cathode-Ray.Tube</th>
+                        <th>TV Chaos UK</th>
+                        <th>Secret Cinema</th>
                     </tr>
-                </tbody>
-            </table>
-            <table class="order-table tvchaosuk exemption">
-                <thead>
-                    <tr><th>TV Chaos UK</th></tr>
+
                     <tr class="description"><th>No blacklist or whitelist.</th></tr>
                 </thead>
                 <tbody>
@@ -913,15 +897,16 @@
         <p>Are you using obscure client? Are you too lazy to check your favorite trackers? Then this site is right for you!</p>
         <img src="https://i.postimg.cc/qqMqgdVP/commoner.gif"></img>
         <p>Updated: 28.07.2023</p>
-        <p><strong>Disclaimer: This is not updated daily. I don't check every tracker every second to see what changes. If you notice mistake then please let me know on one of the trackers that is here. My nickname is either Hawkeye or Doktorko.<strong></p>
+        <p><strong>Disclaimer: This is not updated daily. I don't check every tracker every second to see what changes. If you notice mistake then please let me know on one of the trackers that is here. My nickname is either Hawkeye or Doktorko.</strong></p>
       </div>
     </div>
     <div id="howtouseModal">
       <div id="howtouseContent">
-        <p>In top left corner should be search bar. Type your bittorrent client into it and it should show you all the trackers you can use it on. It is basic search only, nothing advanced yet. Clicking on the header reveals little information/explanation.</p>
+        <p>In top left corner should be search bar. Type your bittorrent client into it and it should show you all the trackers you can use it on. It is basic search only, nothing advanced yet. Clicking on the header reveals little information/explanation. In top menu there is also list of the trackers that are visible. I just grabbed the data they have on site and did very minor modification. I am too lazy to make it more sophisticated.</p>
+        <p>Blutopia and JPTV have blacklist. The search on top should show correctly.</p>
         <img src="https://i.postimg.cc/nhzdkrBX/wtf.gif"></img>
         <p>Updated: 28.07.2023</p>
-        <p><strong>Disclaimer: This is not updated daily. I don't check every tracker every second to see what changes. If you notice mistake then please let me know on one of the trackers that is here. My nickname is either Hawkeye or Doktorko.<strong></p>
+        <p><strong>Disclaimer: This is not updated daily. I don't check every tracker every second to see what changes. If you notice mistake then please let me know on one of the trackers that is here. My nickname is either Hawkeye or Doktorko.</strong></p>
       </div>
     </div>
     <div id="reportModal">
@@ -929,7 +914,7 @@
         <p>Have you found any mistake? Send me message on one of these trackers. I am Hawkeye or Doktorko. </p>
         <img src="https://i.postimg.cc/CMX9djqc/pfphawkeye.gif"></img>
         <p>Updated: 28.07.2023</p>
-        <p><strong>Disclaimer: This is not updated daily. I don't check every tracker every second to see what changes. If you notice mistake then please let me know on one of the trackers that is here. My nickname is either Hawkeye or Doktorko.<strong></p>
+        <p><strong>Disclaimer: This is not updated daily. I don't check every tracker every second to see what changes. If you notice mistake then please let me know on one of the trackers that is here. My nickname is either Hawkeye or Doktorko.</strong></p>
       </div>
     </div>
     <div id="gifModal">
@@ -937,7 +922,7 @@
         <p>Hi kids! Do you like GIFs? Then you must check my <a href="https://postimg.cc/gallery/MV27v8r">giffies</a>.</p>
         <img src="https://i.postimg.cc/pLwdgGLc/veryimpressive.gif"></img>
         <p>Updated: 28.07.2023</p>
-        <p><strong>Disclaimer: This is not updated daily. I don't check every tracker every second to see what changes. If you notice mistake then please let me know on one of the trackers that is here. My nickname is either Hawkeye or Doktorko.<strong></p>
+        <p><strong>Disclaimer: This is not updated daily. I don't check every tracker every second to see what changes. If you notice mistake then please let me know on one of the trackers that is here. My nickname is either Hawkeye or Doktorko.</strong></p>
       </div>
     </div>
     <div id="status">
@@ -945,5 +930,6 @@
         <p id="yes_viable">Nah</p>
     </div>
   </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="script.js"></script>
 </html>

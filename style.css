@@ -308,7 +308,7 @@ template {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: -100vw;
+  top: -100vh;
   left: 0;
   width: 100vw;
   background-color: #3172b4;
@@ -690,5 +690,10 @@ ul#noty_bottomRight_layout_container:hover {
 @media screen and (min-width: 720px) {
   #header #userinfo_stats {
     width: 308px; } }
+@media screen and (max-height: 600px) {
+  html {
+    font-size: 15px; }
+    html body #wrapper #header #menu ul li a {
+      padding: 10px 20px; } }
 
 /*# sourceMappingURL=style.css.map */

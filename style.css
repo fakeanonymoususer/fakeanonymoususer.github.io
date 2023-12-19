@@ -344,14 +344,14 @@ template {
     background-position: center;
     order: 1; }
   #header #userinfo:hover #userinfo_minor {
-    height: 165px; }
+    height: 180px; }
   #header #userinfo:hover::before {
     height: 0; }
   #header #userinfo_username li, #header #userinfo_minor li {
     flex-grow: 1; }
     #header #userinfo_username li a, #header #userinfo_minor li a {
       display: block;
-      padding: 16px 10px; }
+      padding: 21px 10px; }
   #header #userinfo_username {
     position: fixed;
     top: 0;
@@ -526,7 +526,7 @@ ul#noty_bottomRight_layout_container:hover {
   display: none; }
 
 html {
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Roboto Slab', serif;
   background-color: #255b93; }
 
@@ -693,6 +693,10 @@ ul#noty_bottomRight_layout_container:hover {
 @media screen and (max-height: 600px) {
   html {
     font-size: 15px; }
+    html body #wrapper #header #logo {
+      height: 49px; }
+    html body #wrapper #header {
+      top: 49px; }
     html body #wrapper #header #menu ul li a {
       padding: 10px 20px; } }
 

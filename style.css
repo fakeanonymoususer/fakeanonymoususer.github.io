@@ -312,7 +312,19 @@ template {
   left: 0;
   width: 100vw;
   background-color: #3172b4;
-  z-index: 1000; }
+  z-index: 1000;
+ /*
+#userinfo::before{
+	content: "";
+	width: 100vw;
+	height: $menu-height - 20;
+	background-color: $blue-3;
+	background-image: $arrow-down-image;
+	background-size: $menu-height - 40;
+	background-repeat: no-repeat;
+	background-position: center;
+	order: 1;
+}*/ }
   #header ul {
     display: flex;
     flex-direction: row;
@@ -333,16 +345,6 @@ template {
     display: flex;
     flex-direction: column;
     order: 2; }
-  #header #userinfo::before {
-    content: "";
-    width: 100vw;
-    height: 40px;
-    background-color: #184471;
-    background-image: url("https://i.postimg.cc/Tw47V1VN/arrow-down.gif");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    order: 1; }
   #header #userinfo:hover #userinfo_minor {
     height: 180px; }
   #header #userinfo:hover::before {
@@ -376,8 +378,7 @@ template {
     flex-wrap: wrap;
     width: 100%;
     background-color: #255b93;
-    order: 2;
-    height: 0; }
+    order: 2; }
     #header #userinfo_minor li a {
       background-color: #255b93; }
     #header #userinfo_minor li a:hover {
@@ -526,7 +527,7 @@ html {
   background-color: #255b93; }
 
 #content {
-  margin-top: 408px; }
+  margin-top: 550px; }
   #content .thin {
     display: flex;
     flex-direction: column; }

@@ -638,7 +638,8 @@ html {
       margin-top: 10px;
       width: 100%; }
       #content .thin .main_column table.recent[id*='collage'] tbody tr {
-        display: flex; }
+        display: flex;
+        box-sizing: border-box; }
         #content .thin .main_column table.recent[id*='collage'] tbody tr td span:first-child {
           color: #fafafa;
           font-weight: bold; }
@@ -706,7 +707,8 @@ html {
     #content .thin .sidebar .box:last-child {
       margin-bottom: 103px; }
     #content .thin .sidebar .box_image_avatar div div.avatar_container {
-      overflow: hidden; }
+      overflow: hidden;
+      background-color: #0f2b47; }
       #content .thin .sidebar .box_image_avatar div div.avatar_container div {
         width: 100%;
         height: auto; }

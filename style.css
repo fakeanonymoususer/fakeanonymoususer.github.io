@@ -620,12 +620,9 @@ html {
       margin-top: 10px; }
       #content .thin .main_column table.recent#recent_snatches tbody tr, #content .thin .main_column table.recent#recent_uploads tbody tr, #content .thin .main_column table.recent#recent_votes tbody tr {
         display: flex; }
-        #content .thin .main_column table.recent#recent_snatches tbody tr td a, #content .thin .main_column table.recent#recent_uploads tbody tr td a, #content .thin .main_column table.recent#recent_votes tbody tr td a {
-          display: block;
+        #content .thin .main_column table.recent#recent_snatches tbody tr td a img, #content .thin .main_column table.recent#recent_uploads tbody tr td a img, #content .thin .main_column table.recent#recent_votes tbody tr td a img {
+          max-width: 100%;
           height: 100%; }
-          #content .thin .main_column table.recent#recent_snatches tbody tr td a img, #content .thin .main_column table.recent#recent_uploads tbody tr td a img, #content .thin .main_column table.recent#recent_votes tbody tr td a img {
-            max-width: 100%;
-            height: 100%; }
       #content .thin .main_column table.recent#recent_snatches tbody tr.colhead:first-child td a, #content .thin .main_column table.recent#recent_uploads tbody tr.colhead:first-child td a, #content .thin .main_column table.recent#recent_votes tbody tr.colhead:first-child td a {
         color: #c2d8ef;
         font-weight: bold;
@@ -645,11 +642,9 @@ html {
           font-weight: bold; }
           #content .thin .main_column table.recent[id*='collage'] tbody tr td span:first-child a {
             color: #c2d8ef; }
-        #content .thin .main_column table.recent[id*='collage'] tbody tr td a {
+        #content .thin .main_column table.recent[id*='collage'] tbody tr td a img {
+          max-width: 100%;
           height: 100%; }
-          #content .thin .main_column table.recent[id*='collage'] tbody tr td a img {
-            max-width: 100%;
-            height: 100%; }
       #content .thin .main_column table.recent[id*='collage'] tbody tr.colhead {
         width: 100%; }
         #content .thin .main_column table.recent[id*='collage'] tbody tr.colhead td {

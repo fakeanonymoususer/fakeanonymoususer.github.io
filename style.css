@@ -575,7 +575,8 @@ html {
           margin: 0;
           background-color: #0f2b47;
           padding: 10px;
-          margin-top: 10px; }
+          margin-top: 10px;
+          overflow-wrap: break-word; }
           #content .thin .main_column div.news_post:not(:first-child) .pad blockquote img, #content .thin .main_column .box .pad blockquote img {
             width: 100%; }
         #content .thin .main_column div.news_post:not(:first-child) .pad a, #content .thin .main_column .box .pad a {
@@ -611,6 +612,8 @@ html {
       background-color: #1a4979; }
     #content .thin .main_column .box #requests.request_table table tbody .rowb {
       background-color: #163f69; }
+    #content .thin .main_column .box#requests_box .head a {
+      color: #c2d8ef; }
     #content .thin .main_column table.recent#recent_snatches, #content .thin .main_column table.recent#recent_uploads, #content .thin .main_column table.recent#recent_votes {
       background-color: #0f2b47;
       padding: 10px;
@@ -637,10 +640,11 @@ html {
       #content .thin .main_column table.recent[id*='collage'] tbody tr {
         display: flex; }
         #content .thin .main_column table.recent[id*='collage'] tbody tr td span:first-child {
-          color: #c2d8ef;
+          color: #fafafa;
           font-weight: bold; }
+          #content .thin .main_column table.recent[id*='collage'] tbody tr td span:first-child a {
+            color: #c2d8ef; }
         #content .thin .main_column table.recent[id*='collage'] tbody tr td a {
-          display: block;
           height: 100%; }
           #content .thin .main_column table.recent[id*='collage'] tbody tr td a img {
             max-width: 100%;

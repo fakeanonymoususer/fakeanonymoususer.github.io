@@ -2945,5 +2945,5 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 
 /*# sourceMappingURL=style.css.map */
 body > div.autocomplete-suggestions{
-  max-height: initial;
+  max-height: initial!important;
 }
